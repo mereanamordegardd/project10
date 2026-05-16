@@ -7,6 +7,91 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Это итоговый проект <br>Иванова Ивана!</h1>
+
+    <input type="radio" name="page" id="p1" checked>
+    <input type="radio" name="page" id="p2">
+    <input type="radio" name="page" id="p4">
+
+    <header class="header">
+        <div class="box header-box">
+            <div class="logo">Mereana<span>Pay</span></div>
+            <nav class="nav">
+                <ul>
+                    <li><label for="p1">Главная</label></li>
+                    <li><label for="p2">Инфо</label></li>
+                    <li><label for="p4">Отзывы</label></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="box">
+
+        <div id="block1" class="page">
+            <section class="top">
+                <h1>Пополнение Steam</h1>
+                <p>Быстрый способ пополнить кошелек.</p>
+            </section>
+
+            <div class="alert-info">
+                Внимание! Нужно вводить именно <strong>логин Steam</strong> (который вы пишете при входе в аккаунт), а не ваш текущий публичный никнейм.
+            </div>
+
+            <section class="block-form">
+                <form class="form" onsubmit="return false;">
+                    <h2>Оплата</h2>
+                    <div class="group">
+                        <label for="login">Логин:</label>
+                        <input type="text" id="login" placeholder="Логин Steam" required>
+                    </div>
+                    <div class="group">
+                        <label for="sum">Сумма:</label>
+                        <input type="number" id="sum" min="100" max="10000" placeholder="Рубли" required>
+                    </div>
+                    <label for="p4" class="btn">Отправить</label>
+                </form>
+            </section>
+        </div>
+
+        <div id="block2" class="page">
+            <section class="info">
+                <h1>Как это работает?</h1>
+                <div class="grid">
+                    <div class="card">
+                        <div class="num">1</div>
+                        <h3>Логин</h3>
+                        <p>Укажите свой логин. Нужен именно аккаунт для входа в Steam, а не публичный никнейм.</p>
+                    </div>
+                    <div class="card">
+                        <div class="num">2</div>
+                        <h3>Сумма</h3>
+                        <p>Укажите сумму от 100 рублей.</p>
+                    </div>
+                    <div class="card">
+                        <div class="num">3</div>
+                        <h3>Деньги</h3>
+                        <p>Ждите зачисление через пару минут.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="block4" class="page">
+            <div class="error">
+                <div class="code">404</div>
+                <h2>Ошибка!</h2>
+                <p>Страница отзывов не найдена на сервере.</p>
+                <label for="p1" class="btn-go">На главную</label>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="box">
+            <p>&copy; 2026 </p>
+        </div>
+    </footer>
+
 </body>
 </html>
