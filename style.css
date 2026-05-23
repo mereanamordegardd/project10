@@ -296,3 +296,18 @@ main {
         width: 100%;
     }
 }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./derevo-s-krasnymi-fruktami.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px); 
+    opacity: 0.4; 
+    z-index: -1; 
+}
