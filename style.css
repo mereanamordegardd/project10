@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://googleapis.com');
 * {
     margin: 0;
     padding: 0;
@@ -89,7 +89,8 @@ main {
 
 #p1:checked ~ main #block1,
 #p2:checked ~ main #block2,
-#p4:checked ~ main #block4 {
+#p4:checked ~ main #block4,
+#p404:checked ~ main #block404 {
     display: block;
 }
 
@@ -260,6 +261,57 @@ main {
 .btn-go:hover {
     background-color: #a61c2e;
     transform: scale(1.1);
+}
+
+.reviews h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.reviews-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: #1a0c0e;
+    border-left: 4px solid #ff4d6d;
+    padding: 20px;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+    transform: translateX(5px);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.review-header h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.review {
+    font-size: 12px;
+    color: #a69194;
+}
+
+.review-card p {
+    color: #e5d5d8;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .footer {

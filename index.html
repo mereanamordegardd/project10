@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mereanapay</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="letter-m.png">
 </head>
 <body>
 
     <input type="radio" name="page" id="p1" checked>
     <input type="radio" name="page" id="p2">
     <input type="radio" name="page" id="p4">
+    <input type="radio" name="page" id="p404">
 
     <header class="header">
         <div class="box header-box">
@@ -48,7 +50,7 @@
                         <label for="sum">Сумма:</label>
                         <input type="number" id="sum" min="100" max="10000" placeholder="Рубли" required>
                     </div>
-                    <label for="p4" class="btn">Отправить</label>
+                    <label for="p404" class="btn">Отправить</label>
                 </form>
             </section>
         </div>
@@ -77,6 +79,35 @@
         </div>
 
         <div id="block4" class="page">
+            <section class="reviews">
+                <h1>Отзывы клиентов</h1>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <h4>Александр Г.</h4>
+                            <span class="review">Вчера</span>
+                        </div>
+                        <p>Деньги пришли за 2 минуты, комиссия приемлемая. Спасибо!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <h4>Дмитрий К.</h4>
+                            <span class="review">28.05.2026</span>
+                        </div>
+                        <p>Все супер, пополняю здесь уже третий раз. Логин главное не перепутать.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <h4>Мария П.</h4>
+                            <span class="review">25.05.2026</span>
+                        </div>
+                        <p>Быстро прилетели рубли на Стим. Буду пользоваться еще!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="block404" class="page">
             <div class="error">
                 <div class="code">404</div>
                 <h2>Ошибка!</h2>
@@ -95,3 +126,4 @@
 
 </body>
 </html>
+
